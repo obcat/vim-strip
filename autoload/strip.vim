@@ -48,7 +48,7 @@ def strip#onwrite()
       const msg = 'Trailing whitespace detected. Strip?'
       const choices = join(['&Yes', '&No', '&Always', 'Ne&ver'], "\n")
       var choice: number
-      try  #                                 ┌ default: Yes
+      try  #                             ┌ default: Yes
         choice = s:confirm(msg, choices, 1, 'Question')
       finally
         redraw  # avoid hit-enter prompt
